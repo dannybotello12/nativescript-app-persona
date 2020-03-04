@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "478630126331",
+    "firebase_url": "https://nativescript-app-personas.firebaseio.com",
+    "project_id": "nativescript-app-personas",
+    "storage_bucket": "nativescript-app-personas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478630126331:android:c5ce4d35f0bdfd91c8c65e",
+        "android_client_info": {
+          "package_name": "org.nativescript.nativescriptapppersonas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478630126331-48uvnjhb6voj3dur7g2ge65brcra8dn5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBsM6N63ISkfl9X_ACeWFUlrKtyICtzPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478630126331-48uvnjhb6voj3dur7g2ge65brcra8dn5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

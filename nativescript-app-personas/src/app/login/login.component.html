@@ -1,0 +1,21 @@
+<FlexboxLayout class="page_flex">
+    <Label class="header" text="App Personas"></Label>
+    <PreviousNextView>
+        <GridLayout rows="auto, auto, auto">
+            <RadDataForm id='formData' tkExampleTitle tkToggleNavButton [source]="person" [isEnabled]="!processing" (propertyValidate)="onPropertyValidate($event)" (propertyValidated)="onPropertyValidated($event)">
+                <TKEntityProperty tkDataFormProperty name="correo" displayName="Correo" index="0">
+                    <TKPropertyEditor tkEntityPropertyEditor type="Email"></TKPropertyEditor>
+                    <TKNonEmptyValidator tkEntityPropertyValidators errorMessage="Este campo correo es necesario"></TKNonEmptyValidator>
+                    <TKEmailValidator tkEntityPropertyValidators errorMessage="Correo no tiene el formato Correcto"></TKEmailValidator>
+                </TKEntityProperty>
+                <TKEntityProperty tkDataFormProperty name="clave" index="1">
+                    <TKPropertyEditor tkEntityPropertyEditor type="Password"></TKPropertyEditor>
+                    <TKMinimumLengthValidator tkEntityPropertyValidators length="6" errorMessage="Este campo es requerido y debe tener 6 caracteres"></TKMinimumLengthValidator>
+                </TKEntityProperty>
+            </RadDataForm>
+        </GridLayout>
+        <ActivityIndicator rowSpan="3" [busy]="processing"></ActivityIndicator>
+        <Label [text]="mensaje" textWrap="true" margin="12"></Label>
+    </PreviousNextView>
+    <Button [text]="'Ingresar' " [isEnabled]="!processing" (tap)="submit()" class="btn btn-primary m-t-20"></Button>
+</FlexboxLayout>

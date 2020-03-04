@@ -1,13 +1,15 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
-
-import { SearchRoutingModule } from "./search-routing.module";
+import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { SearchComponent } from "./search.component";
 
 @NgModule({
     imports: [
         NativeScriptCommonModule,
-        SearchRoutingModule
+        NativeScriptRouterModule.forChild([
+            { path: "", redirectTo: "search" },
+            { path: "search", component: SearchComponent }])
+    
     ],
     declarations: [
         SearchComponent
