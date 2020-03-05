@@ -1,11 +1,9 @@
-<TabView androidTabsPosition="bottom">
-    <page-router-outlet *tabItem="{title: 'Home Tab'}" name="homeTab" actionBarVisibility="never">
-    </page-router-outlet>
+<GridLayout sdkExampleTitle sdkToggleNavButton>
+    <TabView selectedTabTextColor="white" tabBackgroundColor="blue" androidTabsPosition="bottom">
+        <page-router-outlet *tabItem="{title: 'Busqueda'}" name="busquedaTab" actionBarVisibility="never">
+        </page-router-outlet>
 
-    <page-router-outlet *tabItem="{title: 'browse Tab'}" name="browseTab" actionBarVisibility="never">
-    </page-router-outlet>
-
-    <page-router-outlet *tabItem="{title: 'search Tab'}" name="searchTab" actionBarVisibility="never">
-    </page-router-outlet>
-
-</TabView>
+        <page-router-outlet *tabItem="{title: 'Grafico'}" name="graficoTab" actionBarVisibility="never">
+        </page-router-outlet>
+    </TabView>
+</GridLayout>

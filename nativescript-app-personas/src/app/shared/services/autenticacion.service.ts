@@ -44,10 +44,11 @@ export class AutenticacionService {
   }
 
   estadoAutenticacion() {
+    console.log('estadoAutenticacion');
     firebase.getAuthToken({
         forceRefresh: false
     }).then((token) => {
-       return true;
+      return true;
     }).catch((err) => {
       return false;
     });

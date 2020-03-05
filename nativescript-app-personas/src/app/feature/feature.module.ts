@@ -1,7 +1,8 @@
-import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import { NativeScriptCommonModule } from 'nativescript-angular/common';
+import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
+import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { NativeScriptRouterModule, NSEmptyOutletComponent } from "nativescript-angular/router";
-import { FeatureComponent } from './feature/feature.component';
+import { FeatureComponent } from "./feature/feature.component";
+import { AuthGuard } from "../shared/services/auth-guard";
 
 @NgModule({
  
@@ -12,25 +13,19 @@ import { FeatureComponent } from './feature/feature.component';
       {
           path: "default", component: FeatureComponent, children: [
             {
-              path: "home",
+              path: "busqueda",
               component: NSEmptyOutletComponent,
-              loadChildren: "~/app/home/home.module#HomeModule",
-              outlet: "homeTab"
-          },
-          {
-              path: "browse",
-              component: NSEmptyOutletComponent,
-              loadChildren: "~/app/browse/browse.module#BrowseModule",
-              outlet: "browseTab"
-          },
-          {
-            path: "search",
+              loadChildren: "~/app/busqueda/busqueda.module#BusquedaModule",
+              outlet: "busquedaTab"
+           },
+           {
+            path: "grafico",
             component: NSEmptyOutletComponent,
-            loadChildren: "~/app/search/search.module#SearchModule",
-            outlet: "searchTab"
-        }
+            loadChildren: "~/app/grafico/grafico.module#GraficoModule",
+            outlet: "graficoTab"
+         }
           ]
-      }
+          , canActivate: [AuthGuard] }
   ])
   ],
   declarations: [FeatureComponent],

@@ -15,8 +15,8 @@ export class FeatureComponent implements OnInit {
 
   ngOnInit() {
  
-    this.routerExtension.navigate([{ outlets: { homeTab: ["home"], browseTab: ["browse"], searchTab:["search"]   } }], { relativeTo: this.activeRoute });
+    this.routerExtension.navigate([{ outlets: {
+      busquedaTab: ["busqueda"],
+      graficoTab:  ["grafico"]} }], { relativeTo: this.activeRoute });
   }
   }
-
-

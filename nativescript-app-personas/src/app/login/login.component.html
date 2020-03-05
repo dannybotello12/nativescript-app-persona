@@ -14,7 +14,8 @@
                 </TKEntityProperty>
             </RadDataForm>
         </GridLayout>
-        <ActivityIndicator rowSpan="3" [busy]="processing"></ActivityIndicator>
+        <ActivityIndicator loaded="onLoaded" [busy]="processing" backgroundColor="red" width="100" height="100">
+        </ActivityIndicator>
         <Label [text]="mensaje" textWrap="true" margin="12"></Label>
     </PreviousNextView>
     <Button [text]="'Ingresar' " [isEnabled]="!processing" (tap)="submit()" class="btn btn-primary m-t-20"></Button>
