@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>478630126331-v710qcpf347j56ne24643le9sqi966j6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.478630126331-v710qcpf347j56ne24643le9sqi966j6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCO1JbALtzwSmSVUA6HxUvYJbLHTOBVXcE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>478630126331</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.nativescript.nativescriptapppersonas</string>
+	<key>PROJECT_ID</key>
+	<string>nativescript-app-personas</string>
+	<key>STORAGE_BUCKET</key>
+	<string>nativescript-app-personas.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:478630126331:ios:f4588ae5259d7443c8c65e</string>
+	<key>DATABASE_URL</key>
+	<string>https://nativescript-app-personas.firebaseio.com</string>
+</dict>
+</plist>
