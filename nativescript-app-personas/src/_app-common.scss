@@ -106,9 +106,7 @@ RadDataForm {
     color: #3F51B5;
     padding: 5;
     margin: 5;
-    border-color: #303F9F;
-    border-width: 5;
-    border-radius: 5;
+
 }
 
 PropertyEditor {
@@ -126,7 +124,7 @@ DataFormEditorLabel {
     padding: 10;
     margin: 10;
     width: 150;
-    ;
+    position: right;
 }
 
 DataFormEditorCore {
@@ -134,14 +132,7 @@ DataFormEditorCore {
     padding: 10;
     background-color: white;
     font-family: 'Times New Roman', Times, serif;
-    position: right;
+
 }
 
-PropertyEditor[type='Email'] {
-    font-weight: bold;
-}
 
-EntityProperty[name='password'] DataFormEditorLabel {
-    width: 0;
-    visibility: collapsed;
-}
