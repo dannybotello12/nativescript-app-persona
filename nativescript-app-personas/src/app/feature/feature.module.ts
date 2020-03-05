@@ -23,7 +23,13 @@ import { AuthGuard } from "../shared/services/auth-guard";
             component: NSEmptyOutletComponent,
             loadChildren: "~/app/grafico/grafico.module#GraficoModule",
             outlet: "graficoTab"
-         }
+         },
+         {
+          path: "acceso",
+          component: NSEmptyOutletComponent,
+          loadChildren: "~/app/acceso/acceso.module#AccesoModule",
+          outlet: "accesoTab"
+       }
           ]
           , canActivate: [AuthGuard] }
   ])

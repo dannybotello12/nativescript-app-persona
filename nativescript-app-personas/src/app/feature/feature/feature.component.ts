@@ -17,6 +17,7 @@ export class FeatureComponent implements OnInit {
  
     this.routerExtension.navigate([{ outlets: {
       busquedaTab: ["busqueda"],
-      graficoTab:  ["grafico"]} }], { relativeTo: this.activeRoute });
+      graficoTab:  ["grafico"],
+      accesoTab:  ["acceso"]} }], { relativeTo: this.activeRoute });
   }
   }
